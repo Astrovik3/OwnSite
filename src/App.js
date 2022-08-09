@@ -1,29 +1,21 @@
 import React from 'react';
-import { Grid } from "@mui/material";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-
-import TopBar from './components/TopBar';
+import Home from './screens/Home';
 
 function App() {
   return (
-    <Grid className="App">
-      
-      
-      <TopBar message={'... sitio en construcción ...'} />
-        <p style={{color: "white"}}>
-          App.js has been edited.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/Astrovik3"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GITHUB
-        </a>
-    </Grid>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+/*<Route />
+<Route />*/
