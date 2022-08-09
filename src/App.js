@@ -1,10 +1,17 @@
+import React from 'react';
+import { Grid } from "@mui/material";
+
 import './App.css';
+
+import TopBar from './components/TopBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
+    <Grid className="App">
+      
+      
+      <TopBar message={'... sitio en construcción ...'} />
+        <p style={{color: "white"}}>
           App.js has been edited.
         </p>
         <a
@@ -15,8 +22,7 @@ function App() {
         >
           GITHUB
         </a>
-      </header>
-    </div>
+    </Grid>
   );
 }
 
