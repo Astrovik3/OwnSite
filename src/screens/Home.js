@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 
-import TopBar from './components/TopBar';
+import TopBar from '../components/TopBar';
 
 
 const Home = () => {
