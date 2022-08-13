@@ -8,7 +8,17 @@ const Presentation = () => {
 
   return(
     <Grid className="first">
-      <p className="firstText"> TESTING TESTING TESTING </p>
+      
+      <Grid className="firstSub">
+        <Grid className="firstPhoto">
+
+        </Grid>
+        <Grid className="firstInfo">
+          <p className="firstText"> #JUAN TOMAZ </p>
+          <p className="firstSubtext">Frontend Developer</p>
+        </Grid>
+
+      </Grid>
 
     </Grid>
   );
