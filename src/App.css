@@ -1,5 +1,4 @@
 .App {
-  height: 100vh;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -28,8 +27,36 @@
   font-weight: bold;
 }
 
+.first {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+.firstText {
+  margin: 0px;
+  padding: 0px;
+  color: #00e6e6;
+}
 
-@media (prefers-reduced-motion: no-preference) {
+.second {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background-color: #000000;
+}
+.secondText {
+  margin: 0px;
+  padding: 0px;
+  color: #F92672;
+}
+
+
+
+
+/*#F92672*/
+
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -57,4 +84,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
