@@ -28,10 +28,13 @@
 }
 
 .first {
+  display: flex;
   margin: 0px;
   padding: 0px;
   height: 100vh;
   background-color: #1a1a1a;
+  justify-content: center;
+  align-items: center;
 }
 .firstSub {
   display: flex;
@@ -47,7 +50,27 @@
   margin: 5px;
   background-color: #1a1a1a;
   border: #44AABB 3px solid;
+  animation: blink 2s infinite;
 
+}
+.firstPhoto:hover {
+  border: #a6e22e 3px solid;
+  background-color: #0e0e0e;
+  animation: none;
+}
+@keyframes blink {
+  0%{
+    border: #44AABB 3px solid;
+  }
+  50%{
+    border: #44AABB 3px solid;
+  }
+  51%{
+    border: #a6e22e 3px solid;
+  }
+  100%{
+    border: #a6e22e 3px solid;
+  }
 }
 .firstInfo {
   height: inherit;
@@ -67,7 +90,7 @@
   margin: 0px;
   padding-top: 5px;
   padding-left: 10px;
-  color: #44AABB;
+  color: #757575;
   font-size: small;
   text-align: left;
   font-size: 16px;
