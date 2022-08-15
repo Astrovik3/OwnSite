@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 
 
 
-const Content = () => {
+const Technologies = () => {
 
 
   return(
@@ -20,11 +20,11 @@ const Content = () => {
         </Grid>
       </Grid>
 
-      <p className="secondText"> TESTING TESTING TESTING </p>
+      <p className="secondText"> TECHNOLOGIES TECHNOLOGIES TECHNOLOGIES </p>
 
     </Grid>
   );
 
 }
-export default Content;
+export default Technologies;
 

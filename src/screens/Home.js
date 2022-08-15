@@ -2,8 +2,6 @@ import React from "react";
 import { Grid } from "@mui/material";
 
 import TopBar from '../components/TopBar';
-import Presentation from '../components/Presentation';
-import Content from '../components/Content';
 
 
 const Home = () => {
@@ -12,21 +10,89 @@ const Home = () => {
   return(
     <Grid className="App">
       
-      <TopBar message={'... sitio en construcción ...'} />
-      <Presentation />
-      <Content />
+      <TopBar message={'<<< site under construction >>>'} />
 
-      <p style={{color: "white"}}>
-        App.js has been edited.
-      </p>
-      <a
-        className="App-link"
-        href="https://github.com/Astrovik3"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GITHUB
-      </a>
+      <Grid className="first" id='about'>
+        <Grid className="firstSub1">
+          <Grid className="firstPhoto">
+
+          </Grid>
+          <Grid className="firstInfo">
+            <p className="firstText"> #JUAN TOMAZ </p>
+            <p className="firstSubtext">Frontend Developer</p>
+          </Grid>
+        </Grid>
+        <Grid className="firstSub2">
+          <p className="firstTextMenu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+            <a className="firstAbout" href="#about"> about</a> mauris cursus mattis molestie a iaculis at. Urna neque viverra justo nec ultrices. Ultrices dui sapien eget mi. 
+            Odio euismod lacinia at quis risus sed vulputate odio ut. Quam elementum pulvinar etiam non. 
+            Pulvinar pellentesque habitant morbi tristique senectus. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. 
+            Leo in vitae turpis massa <a className="firstAbout" href="#technologies"> technologies</a> sed tempus. Nisl nisi scelerisque eu ultrices. Risus at ultrices mi tempus imperdiet. 
+            Orci eu lobortis elementum nibh tellus molestie nunc. Eleifend quam adipiscing vitae proin sagittis <a className="firstAbout" href="#projects"> projects</a> rhoncus. 
+            Mattis vulputate enim nulla aliquet. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. 
+            In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Ac turpis egestas integer eget aliquet nibh praesent. 
+            Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Senectus et netus et malesuada fames ac. 
+            Molestie at elementum eu facilisis sed. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Felis donec et odio pellentesque diam. 
+            Et <a className="firstAbout" href="#contact"> contact</a> ac feugiat sed lectus vestibulum mattis. Augue lacus viverra vitae congue eu consequat. 
+            Erat velit scelerisque in dictum non consectetur a. Id ornare arcu odio ut sem nulla. Accumsan sit amet nulla facilisi. 
+            Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. At risus viverra adipiscing at in tellus integer. 
+            Feugiat sed lectus vestibulum mattis ullamcorper. Adipiscing elit pellentesque habitant morbi tristique. 
+            In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Senectus et netus et malesuada fames ac.
+            Odio euismod lacinia at quis risus sed vulputate odio ut. Quam elementum pulvinar etiam non. 
+            Pulvinar pellentesque habitant morbi tristique senectus. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue.
+          </p>
+        </Grid>
+      </Grid>
+      
+
+      <Grid className="third" id='projects'>
+        <Grid className="thirdSub1">
+          <Grid className="thirdOne">
+            
+          </Grid>
+          <Grid className="thirdOne">
+
+          </Grid>
+          <Grid className="thirdOne">
+
+          </Grid>
+        </Grid>
+      </Grid>
+      
+      
+      <Grid className="second" id='technologies'>
+        <Grid className="secondSub">
+          <Grid className="secondItem1">
+            
+          </Grid>
+          <Grid className="secondItem2">
+
+          </Grid>
+          <Grid className="secondItem3">
+
+          </Grid>
+        </Grid>
+        <p className="secondText"> TECHNOLOGIES TECHNOLOGIES TECHNOLOGIES </p>
+      </Grid>
+
+
+      <Grid className="fourth" id='contact'>
+        <Grid className="fourthSub1">
+          <Grid className="fourthItem1">
+            
+          </Grid>
+          <Grid className="fourthItem2">
+
+          </Grid>
+          <Grid className="fourthItem3">
+
+          </Grid>
+        </Grid>
+        <p className="fourthText"> CONTACT CONTACT CONTACT </p>
+      </Grid>
+
+
+
     </Grid>
   );
 
