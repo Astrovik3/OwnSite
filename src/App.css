@@ -33,10 +33,10 @@
   padding: 0px;
   height: 100vh;
   background-color: #1a1a1a;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
 }
-.firstSub {
+.firstSub1 {
   display: flex;
   height: 130px;
   width: 380px;
@@ -57,6 +57,7 @@
   border: #a6e22e 3px solid;
   background-color: #0e0e0e;
   animation: none;
+  cursor: pointer;
 }
 @keyframes blink {
   0%{
@@ -95,7 +96,28 @@
   text-align: left;
   font-size: 16px;
   font-weight: bold;
-
+}
+.firstSub2 {
+  width: 30%;
+  height: 100vh;
+  margin-right: 25px;
+}
+.firstTextMenu {
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  color: #383838;
+  
+}
+.firstAbout {
+  margin: 0px;
+  padding: 0px;
+  color: #44AABB;
+  font-weight: bold;
+}
+.firstAbout:hover {
+  color: #a6e22e;
+  cursor: pointer;
 }
 
 .second {
