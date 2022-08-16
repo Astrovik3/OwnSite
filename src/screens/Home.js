@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid } from "@mui/material";
 
 import TopBar from '../components/TopBar';
@@ -6,6 +6,18 @@ import TopBar from '../components/TopBar';
 
 const Home = () => {
 
+  const [clickPhoto, setClickPhoto] = useState(false);
+
+  const photoClicked = () => {
+    if (clickPhoto) {
+      setClickPhoto(false);
+    }else {
+      setClickPhoto(true);
+      setTimeout(() => {
+        setClickPhoto(false);
+      }, 8000);
+    }
+  }
 
   return(
     <Grid className="App">
@@ -14,9 +26,15 @@ const Home = () => {
 
       <Grid className="first" id='about'>
         <Grid className="firstSub1">
-          <Grid className="firstPhoto">
+          {clickPhoto ? 
+          <div className="firstMoreInfo"> 
+            <p style={{margin:'5px', height:'30px', fontSize:'18px'}}> Introduction </p>
+          </div> 
+          : null}
 
-          </Grid>
+          <div className="firstPhoto" onClick={photoClicked}>
+
+          </div>
           <Grid className="firstInfo">
             <p className="firstText"> #JUAN TOMAZ </p>
             <p className="firstSubtext">Frontend Developer</p>

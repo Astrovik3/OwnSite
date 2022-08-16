@@ -24,7 +24,7 @@
 .topMessage {
   margin: 0px;
   padding: 0px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .first {
@@ -121,6 +121,16 @@
 .firstAbout:hover {
   color: #a6e22e;
 }
+.firstMoreInfo {
+  position: absolute; 
+  width: 60vh;
+  height: 70vh;
+  margin-left: 20px;
+  left: 5%;
+  background-color: #383838;
+  color: #a6e22e;
+
+}
 
 .second {
   margin: 0px;
@@ -161,6 +171,9 @@
   width: 260px;
   border: #44AABB 2px solid;
   background-color: #1a1a1a;
+}
+.thirdRight:hover {
+  visibility: hidden;
 }
 .bla {
   display: flex;
