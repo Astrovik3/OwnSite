@@ -180,9 +180,6 @@
   border: #44AABB 2px solid;
   background-color: #1a1a1a;
 }
-.thirdRight:hover {
-  visibility: hidden;
-}
 .bla {
   display: flex;
   width: 100%;
