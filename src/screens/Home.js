@@ -28,7 +28,7 @@ const Home = () => {
         <Grid className="firstSub1">
           {clickPhoto ? 
           <div className="firstMoreInfo"> 
-            <p style={{margin:'5px', height:'30px', fontSize:'18px'}}> Introduction </p>
+            <p className="firstIntro"> Introduction </p>
           </div> 
           : null}
 

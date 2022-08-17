@@ -23,7 +23,8 @@
 }
 .topMessage {
   margin: 0px;
-  padding: 0px;
+  padding: 2px;
+  font-family: Consolas;
   /*font-weight: bold;*/
 }
 
@@ -128,8 +129,15 @@
   margin-left: 20px;
   left: 5%;
   background-color: #383838;
-  color: #a6e22e;
+  /*add bottom border shadow*/
 
+}
+.firstIntro {
+  margin: 5px;
+  height: 30px; 
+  font-size: 20px;
+  color: #a6e22e;
+  font-weight: bold;
 }
 
 .second {
