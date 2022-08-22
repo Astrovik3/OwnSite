@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
-import { useTransition } from "react-spring";
+import { useTransition, animated } from "react-spring";
 
 import TopBar from '../components/TopBar';
 
@@ -14,11 +14,14 @@ const Home = () => {
       setClickPhoto(false);
     }else {
       setClickPhoto(true);
-      setTimeout(() => {
-        setClickPhoto(false);
-      }, 8000);
     }
-  }
+  };
+
+  const transition = useTransition(clickPhoto, {
+    from: {x: 100, y: 0, opacity: 0},
+    enter: {x: 0, y: 0, opacity: 1},
+    leave: {x: 100, y: 0, opacity: 0}
+  });
 
   return(
     <Grid className="App">
@@ -27,11 +30,13 @@ const Home = () => {
 
       <Grid className="first" id='about'>
         <Grid className="firstSub1">
-          {clickPhoto ? 
-          <div className="firstMoreInfo"> 
-            <p className="firstIntro"> Introduction </p>
-          </div> 
-          : null}
+
+          {transition((style, item) => 
+            item ? 
+              <animated.div style={style} className="firstMoreInfo">
+                <p className="firstIntro"> Introduction </p>
+              </animated.div>
+            : null)}
 
           <div className="firstPhoto" onClick={photoClicked}>
 
