@@ -71,15 +71,13 @@ const Home = () => {
 
       <Grid className="third" id='projects'>
         <Grid className="thirdSub1">
-          <Grid className="thirdleft">
+          <Grid className="thirdItem">
             
           </Grid>
-          <Grid className="bla">
-            <Grid className="thirdRight">
+          <Grid className="thirdItem">
 
-            </Grid>
           </Grid>
-          <Grid className="thirdleft">
+          <Grid className="thirdItem">
 
           </Grid>
         </Grid>
