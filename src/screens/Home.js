@@ -1,9 +1,11 @@
 import React from "react";
 import { Grid } from "@mui/material";
-//import { useTransition, animated } from "react-spring";
 
 import TopBar from '../components/TopBar';
+//import SideBar from '../components/SideBar';
 import Presentation from '../components/Presentation';
+//import Projects from '../components/Projects';
+//import Technologies from '../components/Technologies';
 
 
 const Home = () => {
@@ -64,7 +66,6 @@ const Home = () => {
         </Grid>
         <p className="fourthText"> CONTACT CONTACT CONTACT </p>
       </Grid>
-
 
 
     </Grid>
